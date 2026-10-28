@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🦖DinoWeb</title>
+    <link rel="stylesheet" href="accueil.css">
+    
+</head>
+<body>
+    
+    <div id="leftSide">
+        <h1>🦖DinoWeb</h1>
+        <h2>Le réseau qui dure !</h2>
+        <p>Retrouve tes amis dinos et partage ce que tu veux !</p>
+    </div>
+    
+    
+    <div id="rightSide">
+    <!--La div d'acceuil est celle visible de base-->
+    <div id="acceuil" class="baseVisible">
+        <h1>Bienvenue !</h1>
+        <div class="bouttons">
+            
+            <p>Bon retour parmis nous !</p>
+            <button id="btnConnexion">Connexion</button>
+            
+            <p>Première fois chez les dinos ?</p>
+            <button id="btnInscription">Inscription</button>
+        </div>
+    </div>
+
+    <!--Les div de connexion et inscription sont cachées de base-->
+
+    <div id="connexion" class="baseCache">
+        <h1>Connexion</h1>
+        <form id="formConnexion">
+            <label>Email</label>
+            <input type="email" id="emailConnexion">
+            
+            <label>Mot de passe</label>
+            <input type="password" id="mdpConnexion">
+            
+            <button type="submit">Se connecter</button>
+        </form>
+        <div id="erreurConnexion"></div>
+        <hr>
+        <button id="retourConnex">←Retour à l'accueil</button>
+    </div>
+
+    <div id="inscription" class="baseCache">
+        <h1>Inscription</h1>
+        <form id="formInsc">
+            <div class="champ">
+                <label>Nom</label>
+                <input type="text" id="nom">
+            </div>
+
+            <div class="champ">
+                <label>Prénom</label>
+                <input type="text" id="prenom">
+            </div>
+
+            <div class="champ">
+                <label>Email</label>
+                <input type="email" id="email">
+            </div>
+
+            <div class="champ">
+                <label>Mot de passe</label>
+                <input type="password" id="mdp">
+            </div>
+            
+            <div class="champ">
+                <label>Confirmation</label>
+                <input type="password" id="confirmationMdp">
+            </div>
+
+            <div class="champ">
+                <label for="PhotoProfil"><img src="Images/OIP.jpg" id="photo"></label>
+                <input type="file" accept="image/*" id="PhotoProfil">
+            </div>
+            
+            <button type="submit">Créer le compte</button>
+        </form>
+        <div id="erreurInsc"></div>
+        <hr>
+        <button id="retourInsc">←Retour à l'accueil</button>
+    </div>
+    </div>
+    
+    <script src="stockage.js"></script>
+    <script src="accueil.js"></script>
+</body>
+</html>

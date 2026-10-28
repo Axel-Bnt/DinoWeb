@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    display :flex;
+    height: 100vh;
+}
+
+#leftSide {
+    flex: 1.2;
+    color: white;
+    background-color: #336715;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    justify-content: center;
+}
+
+#leftSide h1 {
+    font-size: 60px;
+    margin-bottom: 25px;
+}
+
+#leftSide h2 {
+    margin-bottom: 20px;
+}
+
+#rightSide {
+    background-color: #e8edf1;
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.baseVisible {
+    display: block;
+}
+.baseCache {
+    display: none;
+}
+
+#acceuil, #inscription, #connexion {
+    width: 100%;
+    max-width: 500px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+#acceuil h1{
+    margin-bottom: 20px;
+    color: #336715; 
+}
+
+#inscription h1{
+    margin-bottom: 20px;
+    color: #336715; 
+}
+
+#connexion h1{
+    margin-bottom: 20px;
+    color: #336715; 
+}
+
+.bouttons {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    transition: 0.5s;
+}
+
+#btnConnexion{
+    background: #336715;
+    color: white;
+    font-weight: bold;
+}
+
+#btnInscription{
+    background: white;
+    color: #336715;
+    font-weight: bold;
+}
+
+#btnConnexion:hover{
+    background: #295211;
+}
+
+#btnInscription:hover{
+    background: rgb(225, 242, 215);
+}
+
+
+
+form button {
+    background: #336715;
+    color: white;
+    font-weight: bold;
+}
+
+.champ {
+    margin-bottom: 24px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #646262;
+}
+input {
+    width:100%;
+    padding: 8px;
+    border: 1px solid #646262;
+    border-radius: 15px;
+}
+
+
+#PhotoProfil {
+    display: none;
+}
+
+#photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    /*Pour pas étirer l'image*/
+    object-fit: cover;
+    border: 2px solid #295211;
+}
+
+#erreurInsc, #erreurConnexion
+{
+    text-align: center;
+    color: rgb(202, 35, 35);
+    font-weight: bold;
+}

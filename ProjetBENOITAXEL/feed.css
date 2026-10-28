@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #d2d2d2;
+}
+
+header{
+    background-color: #336715;
+    color:#ffffff;
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: space-between;
+}
+
+header p{
+    font-size: 20px;;
+    font-weight: bold;
+}
+
+
+header button{
+    background-color: #336715;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    color:#ffffff;
+    cursor: pointer;
+
+}
+
+#feed {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    }
+
+#leftPart {
+    border-radius: 30px;
+    background-color: #ffffff;
+    flex:0.75;
+    flex-direction: column;
+    min-height:100vh;
+    display: flex;
+    align-items: center;
+}
+#centerPart {
+    border-radius: 30px;
+    background-color: #ffffff;
+    flex:1.50;
+    flex-direction: column;
+    min-height:100vh;
+
+}
+
+#rightPart {
+    border-radius: 30px;
+    background-color: #ffffff;
+    flex:0.75;
+    flex-direction: column;
+    display: flex;
+    min-height:100vh;
+}
+
+
+#miniProfil {
+    padding: 15px;
+}
+
+#MiniProfilIMG {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    border: 4px solid #336715;
+    object-fit: cover;
+    
+}
+
+#btnProfil {
+    width: 90%;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #336715;
+    color: white;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+#btnProfil:hover{
+    background: #295211;
+}
+
+#addPost {
+    margin: 25px;
+    padding: 10px;
+    background-color: #d2d2d2;
+    border-radius: 10px;
+    min-height: 420px;
+    max-height : 75%;
+    max-width: 75%;
+    border: 4px solid #336715;
+}
+
+textarea {
+    min-height: 70px;
+    width: 100%;
+    resize:vertical;
+}
+
+#photopost {
+    height: 100%;
+    width: 100%;
+    display: none;
+    border-radius: 10px;
+}
+
+#btnPost{
+    width: 90%;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    background: #336715;
+    color: white;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+#btnPost:hover{
+    background: #295211;
+}
+
+#searchPost {
+    background-color: #d2d2d2;
+    border:3px, solid,#336715;
+    border-radius: 25px;
+    margin: 25px;
+}
+
+#searchPost h2{
+    color:#336715;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#searchPost p{
+    color:#336715;
+    font-weight: bold;
+    padding: 10px;
+}
+
+#searchPost input{
+    width: 90%;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    border-radius: 15px;
+}
+
+.postDiv {
+    background-color: #d2d2d2;
+    border:3px, solid,#336715;
+    border-radius: 25px;
+    margin: 25px;
+    padding: 15px;
+}
+
+.topPost{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.userInfoPost{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.namePost{
+    display: flex;
+    flex-direction: column;
+}
+
+.btnsupprimerPost{
+    width: 15%;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #336715;
+    color: white;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.postProfilImg {
+    max-height: 70px;
+    max-width: 70px;
+    border-radius: 50px;
+    float: left;
+}
+
+.postImg {
+    max-width: 100%;
+    max-height: 500px;
+    padding: 20px;
+}
+
+.postText {
+    font-size: 20px;;
+    font-weight: bold;
+}
+
+.likedIMG{
+    margin-top: 10px;
+    width: 15%;
+    float: left;
+    margin-right: 10px;
+    border-radius: 15px;
+    background: #336715;
+    color: white;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.PostNbLikes{
+    margin-top: 7px;
+    font-size: large;
+}
+
+.allUsers{
+    flex-direction: row;
+    max-height: 120px;
+    padding: 15px;
+    background-color: #d2d2d2;
+    border-radius: 10px;
+    margin: 10px;
+    border: solid;
+    border-color: #336715;
+}
+
+.allUsers button{
+    float:right;
+    border-radius: 15px;
+    width: 30%;
+    color: white;
+    font-weight: bold;
+    background: #336715;
+    transition: 0.5s;
+}
+
+.allUsers button:hover{
+    background: #295211;
+}
+
+.allUsersImg{
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    float: left;
+    object-fit: cover;
+}

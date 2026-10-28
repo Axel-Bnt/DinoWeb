@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: #336715;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+#blocProfil {
+    border-radius: 50px;
+    background-color: white;
+    width:90%;  
+    height:75%;
+    display: flex;
+}
+
+#leftProfil {
+    flex: 1;
+    border: solid;
+    border-width: 0px;
+    border-right-width: 2px;
+    border-color: #336715;
+    padding: 20px;
+}
+
+#rightPart {
+    flex: 1.3;
+}
+
+#rightPart h1 {
+    color: #336715;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+#divBtnProfil{
+    margin-top: 20px;
+}
+
+button {
+    width: 100%;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #336715;
+    color: white;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+button:hover{
+    background: #295211;
+}
+
+#infos {
+    margin-top: 10px;
+    text-align: center;
+    font-size: larger;
+}
+
+
+#ProfilIMG {
+    display: block;
+    margin: auto;
+    border: 4px solid #336715;
+    height: 130px;
+    width: 130px;
+    border-radius: 80px;
+    object-fit: cover;
+}
+
+#stats {
+    text-align: center;
+    border-radius: 10px;
+    background-color: #d2d2d2;
+    border:3px, solid,#336715;
+    margin-top: 20px;
+}
+
+#stats p{
+    color: #336715;
+    font-weight: bold;
+    font-size: larger;
+    margin: 5px;
+}
+#Bloc {
+    display: flex;
+}
+.statBloc {
+    background-color: white;
+    margin: 5px;
+    border-radius: 10px;
+    flex: 1;
+}
+
+.postDiv {
+    max-height: 480px;
+    background-color: #d2d2d2;
+    border:3px, solid,#336715;
+    border-radius: 25px;
+    padding: 25px;
+    margin: 15px;
+    margin-top: 15px;
+}
+
+.postProfilImg {
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    float: left;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+/*Reduit l'image mais donne au moins un aperçu*/
+
+.topPost{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.userInfoPost{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.namePost{
+    display: flex;
+    flex-direction: column;
+}
+
+.btnsupprimerPost{
+    width: 15%;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #336715;
+    color: white;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.postImg {
+    width: 100%;
+    max-height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.postText {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.btnsupprimerPost{
+    width: 15%;
+    justify-content: right;
+}
+
+.likedIMG{
+    width: 15%;
+    float: left;
+    margin-right: 10px;
+    border: none;
+}
+.PostNbLikes{
+    padding: 20px;
+    font-size: large;
+}
+
+
+#noPostText{
+    text-align: center;
+    padding: 120px;
+}
+#logo{
+    font-size: 50px;
+}
+#pasPublications{
+    font-size: 30px;
+}
+
+
+.baseVisible {
+    display: block;
+}
+.baseCache {
+    display: none;
+}
+
+
+/*Modif*/
+#modification {
+    margin-top: 100px;
+    width: 100%;
+    max-width: 500px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+#modification h1{
+    margin-bottom: 20px;
+    color: #336715; 
+}
+
+form button {
+    background: #336715;
+    color: white;
+    font-weight: bold;
+}
+
+.champ {
+    margin-bottom: 24px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #646262;
+}
+input {
+    width:100%;
+    padding: 8px;
+    border: 1px solid #646262;
+    border-radius: 15px;
+}
+
+
+#PhotoProfil {
+    display: none;
+}
+
+#photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    /*Pour pas étirer l'image*/
+    object-fit: cover;
+    border: 2px solid #295211;
+}
+
+#erreurModif
+{
+    text-align: center;
+    color: rgb(202, 35, 35);
+    font-weight: bold;
+}
+
+#retourModif{
+    background-color: white;
+    color: black;
+    font-weight: normal;
+}

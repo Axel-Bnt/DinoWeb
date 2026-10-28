@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🦖DinoWeb - Profil</title>
+    <link rel="stylesheet" href="profil.css">
+</head>
+<body>
+    <div id="blocProfil" class="baseVisible">
+        <div id="leftProfil">
+        <img id="ProfilIMG" src="#"/>
+        <!--Nom prenom mail-->
+        <div id="infos">
+        
+        </div>
+        <button id="btnModif">Modifier le profil</button>
+        <!--Pour les stats (nb followers...)-->
+        <div id="stats">
+            
+        </div>
+        <div id="divBtnProfil">
+        <button id="btnGoFeed">Aller au fil</button>
+        <button id="btnDeconnexion">Déconnexion</button>
+        </div>
+        </div>
+
+        <div id="rightPart">
+            <h1>Dernier post</h1>
+            <hr>
+            <div id="postProfil">
+            </div>
+        </div>
+    </div>
+
+    <div id="modification" class="baseCache">
+        <h1>Modification de profil</h1>
+        <form id="formModif">
+            <div class="champ">
+                <label>Nom</label>
+                <input type="text" id="ModifNom">
+            </div>
+
+            <div class="champ">
+                <label>Prénom</label>
+                <input type="text" id="prenom">
+            </div>
+
+            <div class="champ">
+                <label>Email</label>
+                <input type="email" id="email">
+            </div>
+            
+            <div class="champ">
+                <label>Ancien mot de passe</label>
+                <input type="password" id="AncienMdp">
+            </div>
+            
+            <div class="champ">
+                <label>Nouveau mot de passe</label>
+                <input type="password" id="NouveauMdp">
+            </div>
+            
+            <div class="champ">
+                <label>Confirmation nouveau mot de passe</label>
+                <input type="password" id="ConfirmationNouveauMdp">
+            </div>
+
+            <div class="champ">
+                <label for="PhotoProfil"><img src="Images/OIP.jpg" id="photo"></label>
+                <input type="file" accept="image/*" id="PhotoProfil">
+            </div>
+            
+            <button type="submit">Modifier le compte</button>
+        </form>
+        <div id="erreurModif"></div>
+        <hr>
+        <button id="retourModif">←Retour au profil</button>
+    </div>
+    
+    <script src="stockage.js"></script>
+    <script src="profil.js"></script>
+</body>
+</html>

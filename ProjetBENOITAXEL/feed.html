@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🦖DinoWeb - Feed</title>
+    <link rel="stylesheet" href="feed.css">
+</head>
+
+<body>
+    <header>
+        <p>🦖DinoWeb</p>
+        <button id="btnDeconnexion">Déconnexion</button>
+    </header>
+    <div id="feed">
+        <div id="leftPart">
+            <div id="miniProfil">
+                <img id="MiniProfilIMG" src="#"/>
+            </div>
+            <button id="btnProfil">Profil</button>
+            <div id="addPost">
+                <form id="formAddPost">
+                <textarea id="postText"></textarea>
+                <label for="postImg"><img src="#" id="photopost"></label>
+                <input type="file" accept="image/*" id="postImg">
+                <button id="btnPost">Publier</button>
+                </form>
+            </div>
+
+        </div>
+        <div id="centerPart">
+            <div id="searchPost">
+                <h2>Recherche</h2>
+                <p>Texte recherché : </p>
+                <input id="recherchePost" type="text">
+                <p>Filtre auteur : </p>
+                <input id="recherchePostAuteur" type="text">
+            </div>
+            <div id="errorSearch"></div>
+            <div id="postsZone">
+                
+            </div>
+        </div>
+        <div id="rightPart">
+
+        </div>
+    </div>
+
+
+
+
+    <script src="stockage.js"></script>
+    <script src="feed.js"></script>
+</body>
+</html>
